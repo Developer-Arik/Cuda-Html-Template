@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+/* Custom CSS */
+*,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header,
+header * {
+	z-index: 999999;
+}
+
+header {
+	transition: .5s;
+}
+
+#menu-top ul li {
+	display: inline-block;
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0px 2px;
+	padding: 12px 0px;
+}
+
+#menu-top ul li.active a,
+#menu-top ul li a:hover {
+	background: #643A79;
+}
+
+#menu-top ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 12px !important;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	transition: .5s;
+}
+
+#menu-top ul li:hover ul {
+	display: block;
+}
+
+#menu-top ul li ul {
+	position: absolute;
+	padding: 0;
+	background: rgb(255, 255, 255);
+	margin: 13px 0px;
+	padding: 0px 12px;
+	border-radius: 4px;
+	display: none;
+}
+
+#menu-top ul li ul li {
+	display: block;
+	margin: 6px 0;
+}
+
+#menu-top ul li ul li a {
+	color: #000;
+	text-align: center;
+}
+
+#menu-top ul li ul li a:hover {
+	background: rgb(241, 231, 231);
+}
+
+#menu-top ul li ul li.dpd {
+	margin: 0;
+}
+
+#menu-top ul li ul li.dpd ul {
+	position: relative;
+	margin: 10px 8px;
+	display: none;
+	transition: .8s;
+}
+
+#menu-top ul li ul li.dpd:hover ul {
+	display: block;
+}
+
+#mobileNav-Toggle {
+	display: none !important;
+	cursor: pointer;
+}
+
+#hero {
+	background: #87509C !important;
+}
+
+.btn-cus {
+	padding: 12px 26px;
+	background: #EB7D4B;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	box-shadow: #C86A3F 0 3.98px;
+}
+
+#services {
+	background: #17C2A4;
+}
+
+.title-sec::after {
+	content: '';
+	height: 4px;
+	width: 25%;
+	display: flex;
+	background: #000000;
+	margin: auto;
+	opacity: 15%;
+}
+
+.font-p {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.font-r {
+	font-weight: 400;
+}
+
+footer {
+	background: #344B8E;
+}
+
+#menu-footer ul li {
+	display: inline-block;
+	margin: 0 8px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#menu-footer ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	transition: .5s;
+	outline: none;
+	border: none;
+}
+
+#menu-footer ul li:hover a {
+	color: #30BAE7;
+}
+
+.stiky {
+	background: #b900ff !important;
+}
+
+#team {
+	background: #E7F1F8;
+}
+
+.icon img {
+	max-height: 100px;
+}
+
+#offcanvasMenu {
+	z-index: 99999999999999999999999999999999999999999999999;
+	background: rgb(10 13 16);
+	transition: .5s;
+}
+
+.pls {
+	opacity: 0 !important;
+	display: none !important;
+}
+
+.s-menu {
+	display: block !important;
+	opacity: 1 !important;
+}
+
+#offcanvasMenu .menu-cont {
+	height: 80vh;
+}
+
+nav#mobile ul li {
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 28px;
+}
+
+nav#mobile ul {
+	list-style-type: none;
+}
+
+nav#mobile ul li a {
+	text-decoration: none;
+	color: transparent;
+	-webkit-text-stroke: #fff .6px;
+}
+
+nav#mobile ul li.active a {
+	-webkit-text-stroke: #ffff00 .6px;
+}
+
+svg.radial-progress circle {
+	fill: rgba(0, 0, 0, 0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129;
+	stroke-width: 10;
+}
+
+svg.radial-progress {
+	height: auto;
+	max-width: 200px;
+	padding: 1em;
+	transform: rotate(-90deg);
+	width: 100%;
+}
+
+svg.radial-progress {
+	user-select: none;
+}
+
+svg.radial-progress circle {
+	stroke-width: 6;
+	stroke: #D74680;
+}
+
+svg.radial-progress text {
+	fill: #000000;
+	text-anchor: middle;
+}
+
+svg.radial-progress circle.complete {
+	stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress circle.incomplete {
+	opacity: 0.25;
+}
+
+#ccr-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#ccr-menu li {
+	padding: 4px 18px;
+	margin: 5px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	background: rgb(0, 0, 0, 8%);
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+}
+
+#ccr-menu li.mixitup-control-active {
+	background: #FFFFFF;
+}
+
+#contact {
+	background: #3C5499;
+}
+
+#contact input,
+#contact textarea {
+	background: #273A71;
+	border: none;
+	color: #fff;
+}
+
+#contact textarea::-webkit-resizer {
+	background: url(assets/Arrow.png) no-repeat;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+	color: #fff;
+}
+
+button.btn-sub {
+	background: #30BAE7;
+	box-shadow: #289EC4 0 3.98px;
+}
+
+#portfolio {
+	background: #FFDD99;
+}
+
+@media screen and (max-width:920px) {
+	header .container-fluid {
+		justify-content: space-between !important;
+	}
+
+	header .container-fluid #menu-top {
+		display: none !important;
+	}
+
+	#mobileNav-Toggle {
+		display: flex !important;
+	}
+}
+
+.portfolio-cont .row {
+	display: flex;
+}
